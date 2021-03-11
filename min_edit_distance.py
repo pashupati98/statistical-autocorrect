@@ -1,4 +1,5 @@
 from data_prep import *
+from bigram import *
 
 
 def min_edit_distance(source, target, ins_cost=1, del_cost=1, rep_cost=2):
