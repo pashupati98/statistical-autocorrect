@@ -1,9 +1,3 @@
-import os
-import re
-import numpy as np
-import pandas as pd
-from collections import Counter
-import nltk
 from data_prep import *
 '''
 This auto-correct architecture has 4 components -

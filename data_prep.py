@@ -33,3 +33,37 @@ vocab = set(word_l)
 print(f"The first ten words in the text are: \n{word_l[0:10]}")
 print(f"There are {len(vocab)} unique words in the vocabulary.")
 
+
+# ------------------------------------------------
+#################################################
+# data prep for bi grams
+
+# SOME UTILITY
+
+
+def split_to_sentences(data):
+    #sentences = data.split("\n")
+    sentences = [s.strip() for s in data]
+    sentences = [s for s in sentences if len(s) > 0]
+    return sentences
+
+
+def tokenize_sentences(sentences):
+    tokenized_sentences = []
+    for sentence in sentences:
+        sentence = sentence.lower()
+        tokenized = nltk.tokenize.word_tokenize(sentence)
+        tokenized_sentences.append(tokenized)
+    return tokenized_sentences
+
+
+def get_tokenized_data(data):
+    sentences = split_to_sentences(data)
+    tokenized_sentences = tokenize_sentences(sentences)
+    return tokenized_sentences
+
+# Function check
+tokenized_data = get_tokenized_data(file)
+print(tokenized_data[10:200])
+
+
