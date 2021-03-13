@@ -252,9 +252,9 @@ def get_corrections(word, probs, vocab, n=2, verbose=False):
     return n_best
 
 
-def get_correct_word(word, vocab, probs):
-    corrections = get_corrections(word, probs, vocab, 5, verbose=False)
-    # print(corrections)
+def get_correct_word(word, vocab, probs, n):
+    corrections = get_corrections(word, probs, vocab, n, verbose=False)
+    #    print(corrections)
     if len(corrections) == 0:
         return word
 

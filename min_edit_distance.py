@@ -48,10 +48,10 @@ def min_edit_distance(source, target, ins_cost=1, del_cost=1, rep_cost=2):
 
 # Get correction based on this
 
-def get_correct_word_bigram_min_edit(word, prev_word, probs, vocab, bigram_probability_df, unigram_weight,
-                                     bigram_weight, n, scale_dist):
+def get_correct_word_bigram_min_edit(word, prev_word, probs, vocab, bigram_counts, unigram_weight, bigram_weight, n,
+                                     scale_dist):
     corrections = get_corrections_bigram(word, prev_word, probs, vocab,
-                                         bigram_probability_df, unigram_weight, bigram_weight, n, verbose=False)
+                                         bigram_counts, unigram_weight, bigram_weight, n, verbose=False)
     # print(corrections)
     if len(corrections) == 0:
         return word

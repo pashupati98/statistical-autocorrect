@@ -59,25 +59,53 @@ def make_count_matrix(n_plus1_gram_counts, vocabulary):
 
 # A function to make probability matrix
 
+
 def make_probability_matrix(n_plus1_gram_counts, unique_words, k):
     count_matrix = make_count_matrix(n_plus1_gram_counts, unique_words)
     count_matrix += k
     prob_matrix = count_matrix.div(count_matrix.sum(axis=1), axis=0)
     return prob_matrix
 
+
+def get_bigram_prob(word, prev_word, bigram_counts, factor):
+    key = tuple([prev_word, word])
+    # print(key)
+
+    ksum = 0
+    occ = 0
+    for k, v in bigram_counts.items():
+        if k[0] == prev_word:
+            ksum = ksum + v
+            occ = occ + 1
+    # print(ksum)
+    # print(occ)
+
+    count = 0
+    if key in bigram_counts.keys():
+        count = bigram_counts[key]
+    # print(type(occ))
+
+    smooth_count = count + factor
+    smooth_occ = ksum + occ * factor
+    probability = smooth_count / smooth_occ
+    # print(probability)
+    return probability
+
+
+
 # Function check
 
 
 bigram_counts = count_n_grams(tokenized_data, 2)
-vocab = list(set(vocab))
-bigram_probability_df = make_probability_matrix(bigram_counts, vocab, k=1)
+# vocab = list(set(vocab))
+# bigram_probability_df = make_probability_matrix(bigram_counts, vocab, k=1)
 # print(bigram_probability_df.head())
 
 # Getting correction based on bigrams
 
 
-def get_corrections_bigram(word, prev_word, probs, vocab, bigram_probability_df, unigram_weight=0.3, bigram_weight=0.7,
-                           n=5, verbose=False):
+def get_corrections_bigram(word, prev_word, probs, vocab, bigram_counts, unigram_weight=0.3, bigram_weight=0.7, n=5,
+                           verbose=False):
     '''
     Input:
         word: a user entered string to check for suggestions
@@ -104,24 +132,16 @@ def get_corrections_bigram(word, prev_word, probs, vocab, bigram_probability_df,
         if w in probs.keys():
             suggestions.append(w)
 
-    ##### Probabilities for suggestions
-    try:
-        bigram_df_row_index = bigram_probability_df.index.tolist().index(tuple([prev_word]))
-        bigram_df_row = bigram_probability_df.iloc[bigram_df_row_index]
-    except:
-        bigram_df_row = []
-    # print(bigram_df_row)
-
     best_words = {}
 
     for s in suggestions:
         # best_words[s] = probs[s]
         unigram_prob = probs[s]
         # print(s)
-        if s in bigram_df_row:
-            bigram_prob = bigram_df_row[s]
-        else:
-            bigram_prob = 0
+        try:
+            bigram_prob = get_bigram_prob(s, prev_word, bigram_counts, 1)
+        except:
+            bigram_prob = 0.0000000000000000001
 
         final_score = unigram_weight * unigram_prob + bigram_weight * bigram_prob
 
@@ -136,9 +156,9 @@ def get_corrections_bigram(word, prev_word, probs, vocab, bigram_probability_df,
     return n_best
 
 
-def get_correct_word_bigram(word, prev_word, probs, vocab, bigram_probability_df, unigram_weight, bigram_weight, n):
+def get_correct_word_bigram(word, prev_word, probs, vocab, bigram_counts, unigram_weight, bigram_weight, n):
     corrections = get_corrections_bigram(word, prev_word, probs, vocab,
-                                         bigram_probability_df, unigram_weight, bigram_weight, n, verbose=False)
+                                         bigram_counts, unigram_weight, bigram_weight, n, verbose=False)
     # print(corrections)
     if len(corrections) == 0:
         return word
