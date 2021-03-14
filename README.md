@@ -52,7 +52,9 @@ This probability cab be estimated by counting the occurrences of these series of
 - The numerator is the number of times word 't' appears after words t-1 through t-n appear in the training data.
 - The denominator is the number of times word t-1 through t-n appears in the training data.
 
-<img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/prob.PNG?raw=true">
+<p align="center">
+  <img width="500" height="100" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/prob.PNG?raw=true">
+</p>
 
 In other words, to estimate probabilities based on n-grams, first find the counts of n-grams (for denominator) then divide it by the count of (n+1)-grams (for numerator).
 
@@ -84,3 +86,20 @@ So, given a string source[0..i] and a string target[0..j], we will compute all t
 We'll first create a matrix and update each element in the matrix as follows:
 
 <img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/dp.PNG?raw=true">
+
+## Demo
+
+After implementing these improvements once can finally see a demo by running the demo.py file.
+
+## Evaluation
+
+Let's do a unit testing of this system. Once can run the unit test by running the evaluation.py file.
+
+## Conclusion
+
+This project is a implementation of a statistical auto-correct system. The architecture that has been developed give the accuracy around 52% - 55%. The improved verion of this architecture could get inference from previous word by using bi-gram pobabilities and min edit distance functionality provided further enhancement. Overall, this simple probability based auto-correct system performed okay. In order to get better performance one can go for deep learning based auto-correct systems.
+
+References - 
+- [How to Write a Spelling Corrector](https://norvig.com/spell-correct.html)
+- [Coursera NLP Specialization](https://www.coursera.org/learn/probabilistic-models-in-nlp/home/welcome)
+
