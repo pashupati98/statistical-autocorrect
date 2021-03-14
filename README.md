@@ -59,7 +59,7 @@ This probability cab be estimated by counting the occurrences of these series of
 - The denominator is the number of times word t-1 through t-n appears in the training data.
 
 <p align="center">
-  <img width="500" height="100" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/prob.PNG?raw=true">
+  <img width="300" height="80" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/prob.PNG?raw=true">
 </p>
 
 In other words, to estimate probabilities based on n-grams, first find the counts of n-grams (for denominator) then divide it by the count of (n+1)-grams (for numerator).
@@ -76,7 +76,7 @@ A way to handle zero counts is to add k-smoothing.
 - K-smoothing adds a positive constant $k$ to each numerator and $k \times |V|$ in the denominator, where $|V|$ is the number of words in the vocabulary.
 
 <p align="center">
-  <img width="500" height="100" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/smoothing.PNG?raw=true">
+  <img width="300" height="80" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/smoothing.PNG?raw=true">
 </p>
 
 
@@ -100,6 +100,10 @@ We'll first create a matrix and update each element in the matrix as follows:
 ## Demo
 
 After implementing these improvements once can finally see a demo by running the demo.py file.
+
+<p align="center">
+  <img width="550" height="700" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/demo.PNG?raw=true">
+</p>
 
 ## Evaluation
 
