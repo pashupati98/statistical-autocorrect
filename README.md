@@ -52,7 +52,7 @@ This probability cab be estimated by counting the occurrences of these series of
 - The numerator is the number of times word 't' appears after words t-1 through t-n appear in the training data.
 - The denominator is the number of times word t-1 through t-n appears in the training data.
 
-$$ \hat{P}(w_t | w_{t-1}\dots w_{t-n}) = \frac{C(w_{t-1}\dots w_{t-n}, w_n)}{C(w_{t-1}\dots w_{t-n})} \tag{2} $$
+<img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/prob.PNG?raw=true">
 
 In other words, to estimate probabilities based on n-grams, first find the counts of n-grams (for denominator) then divide it by the count of (n+1)-grams (for numerator).
 
@@ -67,7 +67,7 @@ Now the issue with above formula is that it doesn't work when a count of an n-gr
 A way to handle zero counts is to add k-smoothing.  
 - K-smoothing adds a positive constant $k$ to each numerator and $k \times |V|$ in the denominator, where $|V|$ is the number of words in the vocabulary.
 
-$$ \hat{P}(w_t | w_{t-1}\dots w_{t-n}) = \frac{C(w_{t-1}\dots w_{t-n}, w_n) + k}{C(w_{t-1}\dots w_{t-n}) + k|V|} \tag{3} $$
+<img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/smoothing.PNG?raw=true">
 
 
 For n-grams that have a zero count, the equation (3) becomes $\frac{1}{|V|}$.
@@ -83,24 +83,4 @@ So, given a string source[0..i] and a string target[0..j], we will compute all t
 
 We'll first create a matrix and update each element in the matrix as follows:
 
-$$\text{Initialization}$$
-
-\begin{align}
-D[0,0] &= 0 \\
-D[i,0] &= D[i-1,0] + del\_cost(source[i]) \\
-D[0,j] &= D[0,j-1] + ins\_cost(target[j]) \\
-\end{align}
-
-$$\text{Per Cell Operations}$$
-\begin{align}
- \\
-D[i,j] =min
-\begin{cases}
-D[i-1,j] + del\_cost\\
-D[i,j-1] + ins\_cost\\
-D[i-1,j-1] + \left\{\begin{matrix}
-rep\_cost; & if src[i]\neq tar[j]\\
-0 ; & if src[i]=tar[j]
-\end{matrix}\right.
-\end{cases}
-\end{align}
+<img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/dp.PNG?raw=true">
