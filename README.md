@@ -109,6 +109,11 @@ After implementing these improvements once can finally see a demo by running the
 
 Let's do a unit testing of this system. Once can run the unit test by running the evaluation.py file.
 
+<p align="center">
+  <img width="500" height="150" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/eval1.PNG?raw=true">
+</p>
+
+
 ## Conclusion
 
 This project is a implementation of a statistical auto-correct system. The architecture that has been developed give the accuracy around 52% - 55%. The improved verion of this architecture could get inference from previous word by using bi-gram pobabilities and min edit distance functionality provided further enhancement. Overall, this simple probability based auto-correct system performed okay. In order to get better performance one can go for deep learning based auto-correct systems.
