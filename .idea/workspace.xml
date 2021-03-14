@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="736fc385-90a0-4182-8292-92f6bd3f57c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/architecture.py" beforeDir="false" afterPath="$PROJECT_DIR$/architecture.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autocorrect.py" beforeDir="false" afterPath="$PROJECT_DIR$/autocorrect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigram.py" beforeDir="false" afterPath="$PROJECT_DIR$/bigram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_prep.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/min_edit_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/min_edit_distance.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_prep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="246">
+              <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -33,17 +30,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/architecture.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="4539">
               <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bigram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="162" column="29" lean-forward="true" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
+            <state relative-caret-position="126">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -54,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/min_edit_distance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
+            <state relative-caret-position="969">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -66,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autocorrect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-543">
+            <state relative-caret-position="340">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -75,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="1037">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -90,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wiki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="510">
               <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -101,18 +98,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="272">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -133,19 +126,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/data_prep.py" />
         <option value="$PROJECT_DIR$/wiki.py" />
-        <option value="$PROJECT_DIR$/bigram.py" />
         <option value="$PROJECT_DIR$/min_edit_distance.py" />
         <option value="$PROJECT_DIR$/autocorrect.py" />
         <option value="$PROJECT_DIR$/architecture.py" />
-        <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/unit_test.py" />
         <option value="$PROJECT_DIR$/evaluation.py" />
+        <option value="$PROJECT_DIR$/data_prep.py" />
+        <option value="$PROJECT_DIR$/bigram.py" />
+        <option value="$PROJECT_DIR$/demo.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="60" />
     <option name="y" value="15" />
     <option name="width" value="1030" />
@@ -156,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,11 +157,15 @@
               <item name="statistical-autocorrect" type="b2602c69:ProjectViewProjectNode" />
               <item name="statistical-autocorrect" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="statistical-autocorrect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statistical-autocorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in evaluation.py">
+  <component name="RunManager" selected="Python.demo">
     <configuration name="autocorrect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="statistical-autocorrect" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,8 +324,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in evaluation.py" />
         <item itemvalue="Python.demo" />
+        <item itemvalue="Python tests.pytest in evaluation.py" />
         <item itemvalue="Python.autocorrect" />
         <item itemvalue="Python.min_edit_distance" />
         <item itemvalue="Python.bigram" />
@@ -346,7 +344,8 @@
       <updated>1615476394074</updated>
       <workItem from="1615476450326" duration="5354000" />
       <workItem from="1615625901495" duration="2923000" />
-      <workItem from="1615648229093" duration="3199000" />
+      <workItem from="1615648229093" duration="3841000" />
+      <workItem from="1615742006524" duration="2273000" />
     </task>
     <servers />
   </component>
@@ -356,18 +355,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11476000" />
+    <option name="totallyTimeSpent" value="14391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13203754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32914925" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.9428173" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.66387725" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19665273" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.117154814" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,14 +397,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19665273" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19665273" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -394,66 +415,32 @@
     <SUITE FILE_PATH="coverage/statistical_autocorrect$bigram.coverage" NAME="bigram Coverage Results" MODIFIED="1615648987513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/statistical_autocorrect$architecture.coverage" NAME="architecture Coverage Results" MODIFIED="1615648652995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/statistical_autocorrect$pytest_in_evaluation_py.coverage" NAME="pytest in evaluation.py Coverage Results" MODIFIED="1615649950115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/statistical_autocorrect$demo.coverage" NAME="demo Coverage Results" MODIFIED="1615649751488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/statistical_autocorrect$demo.coverage" NAME="demo Coverage Results" MODIFIED="1615745422919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/statistical_autocorrect$Unnamed.coverage" NAME="test Coverage Results" MODIFIED="1615479097055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/statistical_autocorrect$test.coverage" NAME="test Coverage Results" MODIFIED="1615648459675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/wiki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_prep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        <state relative-caret-position="246">
+          <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bigram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="162" column="29" lean-forward="true" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/architecture.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="4539">
           <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/min_edit_distance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
+        <state relative-caret-position="969">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -463,7 +450,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/autocorrect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-543">
+        <state relative-caret-position="340">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -473,10 +460,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="1037">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

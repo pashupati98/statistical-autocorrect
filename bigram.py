@@ -97,7 +97,8 @@ def get_bigram_prob(word, prev_word, bigram_counts, factor):
 
 
 bigram_counts = count_n_grams(tokenized_data, 2)
-# vocab = list(set(vocab))
+vocab = list(set(vocab))
+vocab = vocab + ['i', 'a']
 # bigram_probability_df = make_probability_matrix(bigram_counts, vocab, k=1)
 # print(bigram_probability_df.head())
 

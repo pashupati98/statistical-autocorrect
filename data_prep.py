@@ -7,7 +7,7 @@ import nltk
 
 # Reading the data
 
-with open('./data/shakespeare.txt', 'r') as f:
+with open('./data/wiki_corpus.txt', 'r') as f:
     file = f.readlines()
 
 
@@ -64,6 +64,6 @@ def get_tokenized_data(data):
 
 # Function check
 tokenized_data = get_tokenized_data(file)
-print(tokenized_data[10:200])
+# print(tokenized_data[10:200])
 
 
