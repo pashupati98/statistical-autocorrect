@@ -2,16 +2,22 @@
 <div>
 <p>The task of an auto-correct system is finding out which words in a document are misspelled. These mispelled words might be presented to a user by underlining that words. Correction is the task of substituting the well-spelled word for misspellings.
 </p>
-<img style="align:center", src="https://github.com/pashupati98/kaggle-archives/blob/main/img/img2.PNG?raw=true">
-    <hr>
-    <p>The very first requirement of auto-correct system is data. We need a trusted text corpus that we'll use to build the auto-correct system. There are many public domain text corpus. Since it's a unsupervised type of problem here what we need is just text. One can use any competition data or any other public dataset that has text field column. In the currect version I have used small fraction of wiki corpus.</p>
+    
+<p align="center">
+  <img width="600" height="300" src="https://github.com/pashupati98/kaggle-archives/blob/main/img/img2.PNG?raw=true">
+</p>
+    
+<hr>
+<p>The very first requirement of auto-correct system is data. We need a trusted text corpus that we'll use to build the auto-correct system. There are many public domain text corpus. Since it's a unsupervised type of problem here what we need is just text. One can use any competition data or any other public dataset that has text field column. In the currect version I have used small fraction of wiki corpus.</p>
 </div>
 
 ## Architecture
 
-<div>
-<img style="align:center", src="https://github.com/pashupati98/kaggle-archives/blob/main/img/architecture.png?raw=true">
-    <hr>
+<p align="center">
+  <img width="600" height="400" src="https://github.com/pashupati98/kaggle-archives/blob/main/img/architecture.png?raw=true">
+</p>
+
+<hr>
 </div>
 
 This auto-correct architecture has 4 components -
@@ -69,7 +75,9 @@ Now the issue with above formula is that it doesn't work when a count of an n-gr
 A way to handle zero counts is to add k-smoothing.  
 - K-smoothing adds a positive constant $k$ to each numerator and $k \times |V|$ in the denominator, where $|V|$ is the number of words in the vocabulary.
 
-<img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/smoothing.PNG?raw=true">
+<p align="center">
+  <img width="500" height="100" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/smoothing.PNG?raw=true">
+</p>
 
 
 For n-grams that have a zero count, the equation (3) becomes $\frac{1}{|V|}$.
@@ -85,7 +93,9 @@ So, given a string source[0..i] and a string target[0..j], we will compute all t
 
 We'll first create a matrix and update each element in the matrix as follows:
 
-<img src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/dp.PNG?raw=true">
+<p align="center">
+  <img width="400" height="300" src="https://github.com/pashupati98/statistical-autocorrect/blob/master/img/dp.PNG?raw=true">
+</p>
 
 ## Demo
 
